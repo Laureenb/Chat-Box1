@@ -9,9 +9,9 @@
 </head>
 <body>
     <?php
-    include("./views/header.php");
+    include("./view/header.php");
     include $content;
-    include("./views/article.php");
+    include("./view/article.php");
     ?>
 </body>
 </html>

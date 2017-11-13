@@ -1,10 +1,10 @@
 <?php
-$get ="";
-if (isset($_GET["page"])) {
-    $get = addslashes($_GET["page"]);
+$post ="";
+if (isset($_POST["page"])) {
+    $post = addslashes($_POST["page"]);
 }
 // $get = explode("/", $_SERVER["REQUEST_URI"]);
-$page = $get != "" ? $get : "presentation";
+$page = $post != "" ? $post : "presentation";
 $view = "./views/" . $page . ".php";
 $content = "";
 
@@ -20,5 +20,5 @@ switch ($page) {
     $content = "./views/error404.php";
 }*/
 
-include "./views/master.php";
+include "./view/master.php";
 ?>
