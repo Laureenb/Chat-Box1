@@ -6,6 +6,7 @@
 		$mdp=md5($mdp);
 
 		$requete="SELECT nom, motDePasse FROM chatons WHERE nom = :utilisateur AND motDePasse = :mdp";
+		$pdo->query("INSERT INTO utilisateur ('nom','motDePasse') VALUES ('$utilisateur','$motDePasse')");
 		include('home.php');
 		$connexion=connex();
 		$connex=$connexion->prepare($requete);
@@ -27,3 +28,10 @@
 		header("location:index.php");
 
 ?>
+
+
+
+
+
+
+

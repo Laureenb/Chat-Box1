@@ -2,53 +2,42 @@
 <html>
   <head>
     <meta charset="utf-8">
+  <link rel="stylesheet" href="styles_chat.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
     <title>ChatBox</title>
   </head>
+  <?php
+  require  "./controler/router.php";
+
+
+   ?>
   <body>
-    <?php
-    require  "./controler/router.php";
-    require './controler/autoloader.php';
-      App\Autoloader::register();
-
-      if(isset($_GET['p'])){
-        $p = $_GET['p'];
-      }else{
-        $p = 'home';
-      }
-
-
-
-    ob_start();
-
-
-
-
-      if($p === 'home'){
-        require './model/home.php';
-      }elseif ($p === 'connexion') {
-        require './view/connexion.php';
-      }
-
-
-    $content = ob_get_clean();
-    require './view/master.php';
-
-
-
-
-     ?>
     <div class='titre1'>
     <h1>Chatbox</h1>
     </div>
-    <div class='titre2'>
-      <h1>LogOut</h1>
+    <div ID='Formulaire'>
+      <form action="" method="post">
+      <div>
+          <label for="nom">User :</label>
+          <input type="text" id="nom" />
+      </div>
+      <div>
+          <label for="message">Message :</label>
+          <textarea id="message"></textarea>
+      </div>
+      <div class="button">
+        <button type="submit">Send</button>
     </div>
-    <div class='Pseudo'>
-      <h2>Pseudo</h2>
-    </div>
-    <div class='Msg'>
-      <h2>Message</h2>
-    </div>
+  </form>
+  <div class='affichage'>
+  </div>
+
+<div class='LogOut'>
+<button type="submit">LogOut</button>
+</div>
+  </div>
+
 
   </body>
 </html>
