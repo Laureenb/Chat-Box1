@@ -12,9 +12,8 @@ $content = "";
 switch ($get) {
     case '404': echo $content=$view; break;
     case 'inscription': $content="./view/inscription.php"; break;
-    case 'login': $content="./model/log-in.php";break;
     case 'connexion': $content="./view/connexion.php";break;
-    case 'home':$content="./model/home.php"break;
+    case 'home':$content="./model/home.php";break;
 
 
 
