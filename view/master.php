@@ -10,7 +10,6 @@
 <body>
     <?php
     include("./view/header.php");
-    include $content;
     include("./view/article.php");
     ?>
 </body>
