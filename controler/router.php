@@ -1,5 +1,6 @@
 <?php
-$post ="";
+
+$post =" ";
 if (isset($_POST["page"])) {
     $post = addslashes($_POST["page"]);
 }
