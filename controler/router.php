@@ -21,4 +21,5 @@ switch ($page) {
 }*/
 
 include "./views/master.php";
+
 ?>
