@@ -1,4 +1,8 @@
 <?php
+
+$post =" ";
+if (isset($_POST["page"])) {
+    $post = addslashes($_POST["page"]);
 $get ="";
 if (isset($_GET["page"])) {
     $get = addslashes($_GET["page"]);
@@ -26,5 +30,4 @@ switch ($get) {
     $content = "./views/error404.php";
 }*/
 
-include "./view/master.php";
 ?>
