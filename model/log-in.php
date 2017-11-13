@@ -6,7 +6,7 @@
 		$mdp=md5($mdp);
 
 		$requete="SELECT nom, motDePasse FROM chatons WHERE nom = :utilisateur AND motDePasse = :mdp";
-		$pdo->query("INSERT INTO utilisateur ('nom','motDePasse') VALUES ('$utilisateur','$motDePasse')");
+		$pdo->query("INSERT INTO utilisateur ('nom','motDePasse') VALUES ('$utilisateur','$mdp')");
 		include('home.php');
 		$connexion=connex();
 		$connex=$connexion->prepare($requete);
@@ -29,14 +29,6 @@
 
 ?>
 
-
-
-
-<<<<<<< HEAD
-$utilisateur = $_POST['utilisateur'];
-$motDePasse = $_POST['motDePasse'];
-=======
->>>>>>> fabc27a3df383c05827168a2797184cae94a1306
 
 
 

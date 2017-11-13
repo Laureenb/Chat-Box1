@@ -13,7 +13,7 @@ switch ($get) {
     case '404': echo $content=$view; break;
     case 'inscription': $content="./view/inscription.php"; break;
     case 'login': $content="./model/log-in.php";break;
-    case 'connexio': $content="./view/connexion.php";break;
+    case 'connexion': $content="./view/connexion.php";break;
 
 
 
