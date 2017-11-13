@@ -7,9 +7,9 @@
   <title>Connexion</title>
 </head>
 <body>
-  <form action="" method="post">
-    <label for="utilisateur">Nom d'utilisateur</label>:<input type="text" name="utilisateur" value=""></br>
-    <label for="mdp">Mot de passe</label>:<input type="password" name="mdp" value=""></br>
+  <form action="./model/login.php" method="post">
+    <label for="utilisateur">Nom d'utilisateur</label>:<input type="text" name="utilisateurs" value=""></br>
+    <label for="mdp">Mot de passe</label>:<input type="password" name="motDePasse" value=""></br>
     <input type="submit" name="Login" value="Login">
   </form>
 </body>
