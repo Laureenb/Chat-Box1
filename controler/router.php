@@ -20,10 +20,4 @@ switch ($page) {
     $content = "./views/error404.php";
 }*/
 
-<<<<<<< HEAD
-include "./views/master.php";
-
-=======
-include "./view/master.php";
->>>>>>> f379dc6b212f802ae67947367660bd81ade7d9a6
 ?>
