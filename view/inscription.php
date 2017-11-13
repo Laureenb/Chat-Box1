@@ -2,23 +2,26 @@
 
 <body>
 
-<form action="index.php" method="post">
+	<article id="main">
 
-	<section id="Inscription">
+	<form action="index.php" method="post">
 
-		<h1>Inscription Chat-Box</h1>
-		<label for="name">Entrez votre nom d'utilisateur</label>
-		<input type="text" name="name" id="name"/><br/><br/>
-		
-		<label for="mot_passe">Entrez votre mot de passe</label>
-		<input type="text" name="mot_passe" id="mot_passe"/><br/><br/>
+		<section id="inscription">
 
-		<input type="submit" value="Valider"/>
+			<h1>Inscription Chat-Box</h1>
+			<label for="name">Entrez votre nom d'utilisateur</label>
+			<input type="text" name="name" id="name"/><br/><br/>
+			
+			<label for="mot_passe">Entrez votre mot de passe</label>
+			<input type="text" name="mot_passe" id="mot_passe"/><br/><br/><br/><br/>
 
-	</section>
+			<input type="submit" value="Valider"/>
 
-</form>
+		</section>
 
+	</form>
+
+</article>
 
 </body>
 

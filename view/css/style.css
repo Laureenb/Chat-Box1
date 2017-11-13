@@ -1,11 +1,19 @@
 /*INSCRIPTION*/
-body{
-background:url(symbol.png) no-repeat;
+#main{
+margin-bottom: 5%;
+width: 100%;
+height: 100%;
+background:url(chat.png) center no-repeat;
 text-align: center;
-/*width: 100%;*/
-
+overflow-y: visible;
 }
 
-
+#inscription{
+padding-top: 20%;
+}
 
 /*404*/
+#main_page{
+background: url(404.png);
+
+}
