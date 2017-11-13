@@ -11,7 +11,7 @@ $content = "";
 switch ($page) {
     case 'log-in': $content="./model/log-in.php"; break;
     case 'inscription': $content="./model/inscription.php"; break;
-    default: $content="./views/error404.php"; break;
+    
 }
 
 /*if (file_exists($view)) {
