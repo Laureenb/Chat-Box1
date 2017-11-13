@@ -1,7 +1,8 @@
 /*INSCRIPTION*/
-#inscription{
-background-color: grey;
+body{
+background:url(symbol.png) no-repeat;
 text-align: center;
+/*width: 100%;*/
 
 }
 
