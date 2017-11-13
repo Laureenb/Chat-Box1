@@ -2,7 +2,7 @@
 
 <form action="index.php" method="post">
 
-	<section>
+	<section id="Inscription">
 
 		<h1>Inscription Chat-Box</h1>
 		<label for="name">Entrez votre nom d'utilisateur</label>
