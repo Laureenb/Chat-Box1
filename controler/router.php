@@ -14,6 +14,10 @@ switch ($get) {
     case 'inscription': $content="./view/inscription.php"; break;
     case 'login': $content="./model/log-in.php";break;
     case 'connexion': $content="./view/connexion.php";break;
+<<<<<<< HEAD
+=======
+    case 'home':$content="./model/home.php"break;
+>>>>>>> e6034cf6e03fc6a8a38f53a5d69356895971ad94
 
 
 
