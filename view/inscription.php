@@ -1,5 +1,7 @@
 <link rel="stylesheet" href="css/style.css">
 
+<article id="main">
+
 <form action="index.php" method="post">
 
 	<section id="Inscription">
@@ -15,5 +17,6 @@
 
 	</section>
 
-</form>
+</article>
 
+</form>

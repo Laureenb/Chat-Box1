@@ -32,6 +32,11 @@
 
 
 
+<<<<<<< HEAD
+$utilisateur = $_POST['utilisateur'];
+$motDePasse = $_POST['motDePasse'];
+=======
+>>>>>>> fabc27a3df383c05827168a2797184cae94a1306
 
 
 

@@ -10,9 +10,9 @@
 <body>
     <?php
 
-    include("./view/article.php");
+  
     include($content);
-    
+
     ?>
 </body>
 </html>
