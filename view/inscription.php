@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="css/style.css">
 
 <article id="main">
 
@@ -19,8 +18,6 @@
 		</section>
 
 	</form>
-
-	</div>
 
 </article>
 

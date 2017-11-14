@@ -10,18 +10,19 @@ $view = "./view/" . $get . ".php";
 $content = "";
 
 switch ($get) {
-    case '404': echo $content=$view; break;
+  
     case 'inscription': $content="./view/inscription.php"; break;
     case 'connexion': $content="./view/connexion.php";break;
-    case 'home':$content="./model/home.php"break;
+    case 'home':$content="./model/home.php";break;
+
 
 }
 
-/*if (file_exists($view)) {
+if (file_exists($view)) {
     $content = $view;
 } else {
     $content = "./views/error404.php";
-}*/
+}
 
 include "./view/master.php";
 ?>
