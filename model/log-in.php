@@ -1,29 +1,20 @@
 <?php
-		include('home.php');
-		
-		if(!empty($_POST['utilisateurs'])&& !empty($_POST['motDePasse']))
-		{
-			$utilisateurs=$_POST['utilisateurs'];
-			$mdp=$_POST['motDePasse'];
-			$mdp=md5($mdp);
-			$query= $pdo->query("SELECT nom, motDePasse FROM chatons WHERE nom = :utilisateurs AND motDePasse = :mdp");		
-			if('utilisateurs' => $utilisateurs, 'motDePasse' => $mdp){
-				$ligne=$query->fetch(PDO::FETCH_ASSOC);
-				$query=closeCursor();
-				if($ligne){
-					$page = $ligne['page'];
-					header("location:".$page.".php");
-				}
-				else
-					if(!isset($ligne['utilisateurs']) || !isset($ligne["motDePasse"]) || empty($ligne['utilisateurs']) || empty($ligne['motDePasse']))
-					{
-						echo" Erreur nom utilisateur ou mot de passe";
-					}
-		}
-		else{
-			
+include('../model/home.php');
 
-		var_dump($_POST);
-}
+$utilisateur = $_POST['utilisateur'];
+$password = $_POST['motDePasse'];
+
+if(isset($_POST['utilisateur']) && isset($_POST['motDePasse'])){
+	$query = $pdo->query("SELECT nom , motDePasse FROM utilisateurs WHERE nom='$utilisateur' AND motDePasse='$password'");
+	 if($query->rowCount() == 1){
+		 	header('?page=master');
+			echo'log';
+	 } else {
+		  echo '<a href="../../Chat-Box1/view/inscription.php"><button>inscris-toi</button></a>';
+			// header('location: ./view/inscription.php');
+	 }
+} else {
+	echo "test";;
 }
 ?>
+

@@ -11,7 +11,7 @@
 			<input type="text" name="nom" id="nom"/><br/><br/><br/>
 
 			<label for="mot_passe">Entrez votre mot de passe</label>
-			<input type="text" name="motDePasse" id="motDePasse"/><br/><br/><br/>
+			<input type="password" name="motDePasse" id="motDePasse"/><br/><br/><br/>
 
 			<input type="submit" value="Valider" id="Valider" />
 

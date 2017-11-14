@@ -15,7 +15,6 @@ switch ($get) {
     case 'connexion': $content="./view/connexion.php";break;
     case 'home':$content="./model/home.php";break;
 
-
 }
 
 if (file_exists($view)) {
