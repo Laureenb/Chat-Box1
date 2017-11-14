@@ -1,5 +1,5 @@
 <?php
-  include 'dbconnect.php';
+  include ('../model/home.php');
 
   $nom = 'bertrand';
   $message = 'bonjour';

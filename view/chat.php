@@ -2,7 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-  <link rel="stylesheet" href="styles_chat.css">
+  <link rel="stylesheet" href="./view/css/styles_chat.css">
+  <link rel="stylesheet" href="./view/css/style.css">
+  <link rel="stylesheet" href="./view/css/style.css.orig">
+
     <title>ChatBox</title>
   </head>
 
