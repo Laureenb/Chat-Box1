@@ -9,9 +9,7 @@
 </head>
 <body>
     <?php
-
-    include($content);
-    
+   	include($content);    
     ?>
 </body>
 </html>
