@@ -2,9 +2,8 @@
 
 <article id="main">
 
-	<div id="border">
+<form action="../inscription-pdo.php" method="post">
 
-	<form action="index.php" method="post">
 
 		<section id="Inscription">
 
