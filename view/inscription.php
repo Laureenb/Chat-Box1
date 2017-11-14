@@ -1,20 +1,28 @@
+<link rel="stylesheet" href="css/style.css">
+
 <article id="main">
 
-<form action="index.php" method="post">
+	<div id="border">
 
-	<section id="Inscription">
+	<form action="index.php" method="post">
 
-		<h1>Inscription Chat-Box</h1>
-		<label for="name">Entrez votre nom d'utilisateur</label>
-		<input type="text" name="name" id="name"/><br/><br/>
+		<section id="Inscription">
 
-		<label for="mot_passe">Entrez votre mot de passe</label>
-		<input type="text" name="mot_passe" id="mot_passe"/><br/><br/>
+			<h1>Inscription Chat-Box</h1><br/><br/>
+			<label for="name">Entrez votre nom d'utilisateur</label>
+			<input type="text" name="name" id="name"/><br/><br/><br/>
+		
+			<label for="mot_passe">Entrez votre mot de passe</label>
+			<input type="text" name="mot_passe" id="mot_passe"/><br/><br/><br/>
 
-		<input type="submit" value="Valider"/>
+			<input type="submit" value="Valider" id="Valider" />
 
-	</section>
+		</section>
+
+	</form>
+
+	</div>
 
 </article>
 
-</form>
+
