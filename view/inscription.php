@@ -1,6 +1,6 @@
 <article id="main">
 
-<form action="index.php" method="post">
+<form action="../inscription-pdo.php" method="post">
 
 	<section id="Inscription">
 
