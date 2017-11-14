@@ -1,5 +1,5 @@
 <?php
-  include 'dbconnect.php';
+  include ('../model/home.php');
 
   $nom = 'test';
   $message = $_POST['message'];

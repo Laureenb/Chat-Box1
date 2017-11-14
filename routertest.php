@@ -7,8 +7,9 @@
   <head>
     <meta charset="utf-8">
     <title>Chat-Box</title>
-  </head>
-
+    <link rel="stylesheet" href="./view/css/style.css">
+    <link rel="stylesheet" href="./view/css/styles_chat.css">
+</head>
   <body>
     <?php
       $page = isset($_GET['page']) ? htmlentities($_GET['page']) : 'default';
@@ -18,7 +19,7 @@
           $controller = new connexionController();
           break;
         case 'chat':
-          include(Controller . 'chat.php');
+          include(Controller . 'chatController.php');
           $controller = new chatController();
           break;
         // case 'contact':
