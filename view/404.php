@@ -1,7 +1,6 @@
 
 <link rel="stylesheet" href="css/style.css">
 
-<body>
 	<section id="main_page">
 
 		<div id="page">
@@ -10,7 +9,8 @@
 		<div id="text">
 			<h2>Désolé cette page n'existe plus...</h2>
 		</div>
-		<button class="bouton">REDIRECTION</a></button> 
+		<div id="butt">
+			<button>REDIRECTION</a></button> 
+		</div>
 	
 	</section>
-</body>
