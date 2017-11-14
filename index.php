@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-  <link rel="stylesheet" href="styles_chat.css">
+  <link rel="stylesheet" href="styles_chat.css" />
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
     <title>ChatBox</title>

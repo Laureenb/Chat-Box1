@@ -68,7 +68,10 @@
   display: block;
   margin: 0 auto;
   margin-bottom: 50px;
-
+  overflow: scroll;
+}
+.userid{
+  float: left;
 }
 .LogOut{
   text-align: center;

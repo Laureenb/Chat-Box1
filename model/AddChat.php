@@ -2,21 +2,24 @@
   include ('../model/home.php');
 
   // $nom = 'test';
-  // $message = $_POST['message'];
-  // echo $message;
-  //
-  // $reponse = $pdo->prepare('INSERT INTO `chat-message`(`nom`, `message`) VALUES (:nom, :message)');
-  // $reponse->bindParam(':nom', $nom);
-  // $reponse->bindParam(':message', $message);
-  // $reponse->execute();
+  $message = $_POST['message'];
+  session_start();
+  $reponse = $pdo->prepare('INSERT INTO chatMessage (userid,message) VALUES (:userid,:message)');
+  $reponse->bindParam(':message', $message);
+  $reponse->bindParam(':userid', $_SESSION['user']['ID']);
+  $reponse->execute();
 
-  $reponse = $pdo->query('SELECT userid, message FROM chat-message ORDER BY ID DESC LIMIT 0, 10');
-
-
-  while ($donnees = $reponse->fetch())
+  $msg = $pdo->query("SELECT * FROM chatMessage ORDER BY id DESC");
+  $sessionMsg = $msg->fetch();
+  while($donnees = $msg->fetch())
   {
-	echo '<p><strong>' . htmlspecialchars($donnees['userid']) . '</strong> : ' . htmlspecialchars($donnees['message']) . '</p>';
+    echo $donnees['userid'];
+    echo '<br/>';
+    echo $donnees['message'];
   }
+  $_SESSION['message'] = '$sessionMsg';
 
-  $reponse->closeCursor();
+
+
+
 ?>

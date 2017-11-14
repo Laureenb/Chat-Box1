@@ -3,8 +3,6 @@
   <head>
     <meta charset="utf-8">
   <link rel="stylesheet" href="./view/css/styles_chat.css">
-  <link rel="stylesheet" href="./view/css/style.css">
-  <link rel="stylesheet" href="./view/css/style.css.orig">
 
     <title>ChatBox</title>
   </head>
@@ -14,10 +12,19 @@
   <h1>Chatbox</h1>
     </div>
   <div class='affichage'>
-      <!-- ici on insert tous les messages  -->
+    <?php
+      require_once './model/home.php';
+      $msg = $pdo->query("SELECT * FROM chatMessage ORDER BY id DESC");
+      $sessionMsg = $msg->fetch();
+      while($donnees = $msg->fetch())
+      {
+        echo '<div class="userid">'.$donnees['userid'].'</div>';
+        echo '<div class="message">'.$donnees['message'].'</div>';
+      }
+     ?>
   </div>
   <div ID='Formulaire'>
-      <form action="./AddChat.php" method="post">
+      <form action="./model/AddChat.php" method="post">
         <div>
             <label for="message">Message :</label>
             <textarea id="message" name="message"></textarea>
