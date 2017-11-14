@@ -10,35 +10,11 @@
   <?php
   require  "routertest.php";
 
-
-
    ?>
+<html>
   <body>
-    <div class='titre1'>
-    <h1>Chatbox</h1>
-    </div>
-    <div ID='Formulaire'>
-      <form action="" method="post">
-      <div>
-          <label for="nom">User :</label>
-          <input type="text" id="nom" />
-      </div>
-      <div>
-          <label for="message">Message :</label>
-          <textarea id="message"></textarea>
-      </div>
-      <div class="button">
-        <button type="submit">Send</button>
-    </div>
-  </form>
-  <div class='affichage'>
-  </div>
-
-<div class='LogOut'>
-<button type="submit">LogOut</button>
-</div>
-  </div>
-
+    <a href="?page=inscription">Inscris-toi</a></br>
+    <a href="?page=connexion">Connecte toi</a>
 
   </body>
 </html>

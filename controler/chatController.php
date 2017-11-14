@@ -3,7 +3,7 @@ class chatController {
   public function __construct(){
 
   }
-  public function run(){
+  public function run() {
     include View. 'chat.php';
   }
 }
