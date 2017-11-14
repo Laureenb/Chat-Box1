@@ -1,25 +1,15 @@
 <?php
-
-		// include('home.php');
-		// $req = $pdo->prepare("INSERT INTO utilisateurs (nom,motDePasse) VALUES (?,?)");
-		// $req->execute(['nom','mdp']);
-
-
-
+		include('home.php');
+		
 		if(!empty($_POST['utilisateurs'])&& !empty($_POST['motDePasse']))
 		{
 			$utilisateurs=$_POST['utilisateurs'];
 			$mdp=$_POST['motDePasse'];
 			$mdp=md5($mdp);
-			$requete="SELECT nom, motDePasse FROM chatons WHERE nom = :utilisateurs AND motDePasse = :mdp";
-			$pdo->query("INSERT INTO utilisateurs ('nom','motDePasse') VALUES ('$utilisateurs','$motDePasse')");
-			include('home.php');
-			$connexion=connex();
-			$connex=$connexion->prepare($requete);
-			$connex->execute(array('utilisateurs' => $utilisateurs, 'motDePasse' => $mdp));
-			if($connex)
-				$ligne=$connex->fetch(PDO::FETCH_ASSOC);
-				$connex=closeCursor();
+			$query= $pdo->query("SELECT nom, motDePasse FROM chatons WHERE nom = :utilisateurs AND motDePasse = :mdp");		
+			if('utilisateurs' => $utilisateurs, 'motDePasse' => $mdp){
+				$ligne=$query->fetch(PDO::FETCH_ASSOC);
+				$query=closeCursor();
 				if($ligne){
 					$page = $ligne['page'];
 					header("location:".$page.".php");
@@ -34,5 +24,6 @@
 			
 
 		var_dump($_POST);
+}
 }
 ?>
