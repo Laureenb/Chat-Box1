@@ -8,7 +8,9 @@
     <title>ChatBox</title>
   </head>
   <?php
-  require  "./controler/router.php";
+
+  require  "routertest.php";
+
    ?>
   <body>
     <div class='titre1'>
