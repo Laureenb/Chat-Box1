@@ -16,8 +16,9 @@
     echo $donnees['userid'];
     echo '<br/>';
     echo $donnees['message'];
+    echo '<br/>';
   }
-  $_SESSION['message'] = '$sessionMsg';
+  $_SESSION['message'] = $message;
 
 
 

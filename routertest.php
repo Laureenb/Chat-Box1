@@ -12,6 +12,7 @@
 </head>
   <body>
     <?php
+
       $page = isset($_GET['page']) ? htmlentities($_GET['page']) : 'default';
       switch ($page) {
         case 'connexion':
@@ -27,6 +28,10 @@
         //   $controller = new contactController();
         //   break;
         case 'inscription':
+          include(Controller . 'inscriptionController.php');
+          $controller = new inscriptionController();
+          break;
+        case 'default':
           include(Controller . 'inscriptionController.php');
           $controller = new inscriptionController();
           break;

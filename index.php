@@ -13,8 +13,16 @@
    ?>
 <html>
   <body>
-    <a href="?page=inscription">Inscris-toi</a></br>
-    <a href="?page=connexion">Connecte toi</a>
-
+<div class="ins_con">
+    <div class="inscription">
+      <a href="?page=inscription">Inscris-toi</a></br>
+  </div>
+  <div class="connexion">
+    <a href="?page=connexion">Connecte-toi</a>
+  </div>
+  <div class="chat">
+    <a href="?page=chat">Chat</a>
+  </div>
+</div>
   </body>
 </html>

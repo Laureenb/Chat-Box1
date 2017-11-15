@@ -60,7 +60,7 @@
     margin-left: .5em;
 }
 .affichage{
-  padding-top:50px;
+  padding-top:30px;
   width: 434px;
   height: 300px;
   border: 1px solid #CCC;
@@ -68,8 +68,11 @@
   display: block;
   margin: 0 auto;
   margin-bottom: 50px;
-  overflow: scroll;
+  overflow-y: scroll;
+
+  padding: 40px;
 }
+
 .userid{
   float: left;
 }
@@ -82,5 +85,58 @@
   background-color: black;
   color:#FFFFFF;
   border: none;
+}
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
 
+::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: black;
+}
+.ins_con{
+  width: 22%;
+    text-align: center;
+    display: flex;
+    margin: 0 auto;
+    padding-top: 60px;
+    justify-content: space-between;
+}
+.inscription{
+  height: 30px;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+  padding:2px;
+  text-align: center;
+}
+.connexion{
+  height: 30px;
+  width: 150px;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+  padding:2px;
+  text-align: center;
+
+}
+.chat{
+  height: 30px;
+  width: 150px;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+  padding:2px;
+  text-align: center;
+}
+a{
+color: black;
 }
