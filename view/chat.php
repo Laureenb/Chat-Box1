@@ -15,10 +15,11 @@
     <?php
       require_once './model/home.php';
       $msg = $pdo->query("SELECT * FROM chatMessage ORDER BY id DESC");
-      $sessionMsg = $msg->fetch();
       while($donnees = $msg->fetch())
       {
+        echo "<strong>";
         echo '<div class="userid">'.$donnees['userid'].'</div>';
+        echo ":</strong>";
         echo '<div class="message">'.$donnees['message'].'</div>';
       }
      ?>
